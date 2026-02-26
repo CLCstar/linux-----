@@ -1,5 +1,5 @@
 #获取宿主机 IP（在 Ubuntu 终端输入）
-cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
+ip route show | grep default | awk '{print $3}'
 #得到ip地址
 #手动替换ip和端口
 export http_proxy="http://172.20.10.1:7890"
