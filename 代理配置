@@ -4,3 +4,5 @@ ip route show | grep default | awk '{print $3}'
 #手动替换ip和端口
 export http_proxy="http://172.20.10.1:7890"
 export https_proxy="http://172.20.10.1:7890"
+#回到默认网络设置
+unset http_proxy https_proxy all_proxy
