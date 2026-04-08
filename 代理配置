@@ -7,3 +7,5 @@ export http_proxy="http://172.28.160.1:6984"
 export https_proxy="http://172.28.160.1:6984"
 #回到默认网络设置
 unset http_proxy https_proxy all_proxy
+git config --global http.proxy http://172.28.160.1:6984
+git config --global https.proxy http://172.28.160.1:6984
